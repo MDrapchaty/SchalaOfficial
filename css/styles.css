@@ -1,0 +1,28 @@
+body{
+	background-color: grey;
+}
+
+nav{
+	float: right;
+}
+
+li{
+	display: inline;
+	margin-right: 2em; 
+}
+
+img{
+	width: 100%;
+}
+
+footer{
+	width: 100%;
+}
+
+form{
+	float: left;
+}
+
+footer ul{
+	float: right;
+}
