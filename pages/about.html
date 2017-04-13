@@ -26,17 +26,8 @@
 	   }(document, 'script', 'facebook-jssdk'));
 	</script>
 	
-	<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
-<script>
-SC.initialize({
-  client_id: 'JhgzwuFV4gy1OTWdCqJTb4ONPPywajnY'
-});
+<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
 
-var track_url = 'https://soundcloud.com/schalala/night-sky-original-mix-out-now';
-SC.oEmbed(track_url, { auto_play: true }).then(function(oEmbed) {
-  console.log('oEmbed response: ', oEmbed);
-});
-</script>
 
 	<div id="wrapper">
 		<header>
@@ -52,6 +43,17 @@ SC.oEmbed(track_url, { auto_play: true }).then(function(oEmbed) {
 			</nav>
 		</header>
 		<div id="main">
+			<script>
+			  SC.initialize({
+			    client_id: 'JhgzwuFV4gy1OTWdCqJTb4ONPPywajnY',
+			    redirect_uri: 'http://localhost:8888/SchalaOfficial/'
+			  });
+
+			  var track_url = 'http://soundcloud.com/forss/flickermood';
+			SC.oEmbed(track_url, { auto_play: true }).then(function(oEmbed) {
+			  console.log('oEmbed response: ', oEmbed);
+			});
+			</script>
 			<img src="../img/Schala1.jpg" alt="schala">
 			<img src="../img/Schala2.jpg" alt="schala">
 			<img src="../img/Schala3.jpg" alt="schala">
