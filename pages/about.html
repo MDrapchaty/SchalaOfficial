@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Schala Offical</title>
+	<title>Schala Offical Trance Music</title>
+	<meta name="description" content="Offical Page For Trance Music Artist SCHALA">
 	<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -24,6 +25,18 @@
 	     fjs.parentNode.insertBefore(js, fjs);
 	   }(document, 'script', 'facebook-jssdk'));
 	</script>
+	
+	<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+<script>
+SC.initialize({
+  client_id: 'JhgzwuFV4gy1OTWdCqJTb4ONPPywajnY'
+});
+
+var track_url = 'https://soundcloud.com/schalala/night-sky-original-mix-out-now';
+SC.oEmbed(track_url, { auto_play: true }).then(function(oEmbed) {
+  console.log('oEmbed response: ', oEmbed);
+});
+</script>
 
 	<div id="wrapper">
 		<header>
@@ -39,22 +52,33 @@
 			</nav>
 		</header>
 		<div id="main">
-			<img src="../img/Schala.jpg" alt="schala">
-		</div>
+			<img src="../img/Schala1.jpg" alt="schala">
+			<img src="../img/Schala2.jpg" alt="schala">
+			<img src="../img/Schala3.jpg" alt="schala">
+			<img src="../img/Schala4.jpg" alt="schala">
+		</div><!-- main -->
 		<div id="social">
 			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
 
 			<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
 
-<a href="https://twitter.com/schalasf" class="twitter-follow-button" data-show-screen-name="false" data-lang="en" data-show-count="false">Follow @schalasf</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<a href="https://twitter.com/schalasf" class="twitter-follow-button" data-show-screen-name="false" data-lang="en" data-show-count="false">Follow @schalasf</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<a href="https://twitter.com/intent/tweet?screen_name=schalasf" class="twitter-mention-button" data-text="Check out " data-show-count="false">Tweet to @schalasf</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-	    
+			<a href="https://twitter.com/intent/tweet?screen_name=schalasf" class="twitter-mention-button" data-text=" " data-show-count="false">Tweet to @schalasf</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>	
+
+			
+	    </div><!-- social -->
+	    <div id="about">
+	    	<p> Hailing from the United States, "SCHALA" (born Sean Decker) has been interested in electronic music since early childhood. He began his music career playing in metal bands throughout Northern California, but started producing dance music shortley thereafter. Releasing his debut EP, "Alter Time" on Enhanced Music's Trance label, Enhanced Progressive, it quickly topped the charts and became the #1 Trance EP release for several days during 2016. It wasn't too long until he started receiving support from the world leading DJs across multiple genres; anywhere in the trance camp from Armin van Buuren and Above & Beyond, to even electro artists like Ummet Ozcan and VINAI. Being given consistent air time support from radio shows like Above & Beyond's Group Therapy, SCHALA is becoming internationally recognized for his heavy hitting rhythm and stormy melodic brand of Trance music. Having played for the Enhanced Music's Enhanced Sessions 350 special alongside artists like Tritonal, Breathe Carolina, BRKLYN, and Wrechiski, SCHALA began regularly playing clubs and parties throughout his home town. Originally from San Francisco CA, SCHALA relocated to the countryside of Colorado in 2017, while frequently also traveling to Denver, LA, and San Francisco for its prestigious night life and other musical endeavors.</p>
+	    </div>
+	    <div id="label">
+	    	<img src="../img/Dansant-Logo.gif" alt="Dansant Schala Trance">
+	    	<img src="../img/enhanced.png" alt="Enhanced Schala Trance">
 	    </div>
 		<footer>
 			<form action="/action_page.php">
-			  <input type="text" placeholder="Join Mailing List" name="mail"><br>
-			  <input type="submit" value="Submit">
+			    <input type="text" placeholder="Join Mailing List" name="mail"><br>
+			    <input type="submit" value="Submit">
 			</form>
 			<ul id="social_links">
 				<li> <a href="https://www.facebook.com/schalamusic/" target="_blank">facebook</a> </li>
