@@ -5,6 +5,10 @@
 	<title>Schala Offical Trance Music</title>
 	<meta name="description" content="Offical Page For Trance Music Artist SCHALA">
 	<link rel="stylesheet" href="../css/styles.css">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>	
 </head>
 <body>
 	<script>
@@ -26,8 +30,6 @@
 	   }(document, 'script', 'facebook-jssdk'));
 	</script>
 	
-<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
-
 
 	<div id="wrapper">
 		<header>
@@ -43,17 +45,6 @@
 			</nav>
 		</header>
 		<div id="main">
-			<script>
-			  SC.initialize({
-			    client_id: 'JhgzwuFV4gy1OTWdCqJTb4ONPPywajnY',
-			    redirect_uri: 'http://localhost:8888/SchalaOfficial/'
-			  });
-
-			  var track_url = 'http://soundcloud.com/forss/flickermood';
-			SC.oEmbed(track_url, { auto_play: true }).then(function(oEmbed) {
-			  console.log('oEmbed response: ', oEmbed);
-			});
-			</script>
 			<img src="../img/Schala1.jpg" alt="schala">
 			<img src="../img/Schala2.jpg" alt="schala">
 			<img src="../img/Schala3.jpg" alt="schala">
@@ -91,6 +82,7 @@
 		</footer>
 
 	</div><!-- wrapper -->
-<script src="js/script.js"></script>	
+<script src="../js/script.js"></script>
+
 </body>
 </html>
