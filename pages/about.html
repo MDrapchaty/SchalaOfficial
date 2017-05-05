@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+test<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -6,9 +6,11 @@
 	<meta name="description" content="Offical Page For Trance Music Artist SCHALA">
 	<link rel="stylesheet" href="../css/styles.css">
 	<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>	
+     src="https://code.jquery.com/jquery-3.2.1.min.js"
+     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+     crossorigin="anonymous"></script>	
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
 	<script>
@@ -44,12 +46,14 @@
 				</ul>
 			</nav>
 		</header>
-		<div id="main">
-			<img src="../img/Schala1.jpg" alt="schala">
-			<img src="../img/Schala2.jpg" alt="schala">
-			<img src="../img/Schala3.jpg" alt="schala">
-			<img src="../img/Schala4.jpg" alt="schala">
-		</div><!-- main -->
+		<div class="fade">
+			<div> <img src="../img/Schala1.jpg" alt="schala"> </div>
+			<div> <img src="../img/Schala2.jpg" alt="schala"> </div>
+			<div> <img src="../img/Schala3.jpg" alt="schala"> </div>
+			<div> <img src="../img/Schala4.jpg" alt="schala"> </div>
+		</div><!-- fade -->
+		
+
 		<div id="social">
 			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
 
@@ -83,6 +87,21 @@
 
 	</div><!-- wrapper -->
 <script src="../js/script.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.fade').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 500,
+	  fade: true,
+	  cssEase: 'linear'
+    });
+  });
+ </script>
 
 </body>
 </html>
