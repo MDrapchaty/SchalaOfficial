@@ -1,12 +1,35 @@
-body{
-	background-color: grey;
+
+body, #wrapper{
+	color: white;
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	height: 100vh;
+
 }
 
 nav{
+	width: 100%;
+	height: 7.5em;
+	position: fixed;
+	top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1;
+}
+
+nav h1{
+	width: auto;
+	position: relative;
+	left: 20%;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul{
 	float: right;
 }
 
-li{
+nav ul li{
 	display: inline;
 	margin-right: 2em; 
 }
@@ -17,6 +40,11 @@ img{
 
 footer{
 	width: 100%;
+	height: 4em;
+	position: fixed;
+	bottom: 0; 
+	background-color: rgba(0, 0, 0, .8);
+	z-index: 1;
 }
 
 form{
@@ -25,4 +53,95 @@ form{
 
 footer ul{
 	float: right;
+}
+
+header{
+	width: 100%;
+	height: 7.5em;
+
+}
+
+.nopadding{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+
+
+#wrapper{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#myVideo{
+	position: fixed;
+	top: -20px;
+	width: 100%;
+}
+
+#main{
+	display: block;
+	clear: both;
+	overflow: auto;
+	margin: 0 auto;
+}
+
+/* Music Page */
+
+#gallery{
+	width: 100%;
+	height: 100%;
+}
+
+#carousel{
+	width: 25%;
+	height: 500px;
+	position: fixed;
+	left: 40%;
+	top: 25%;	
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    font-size: 0;
+	color: pink;
+	width: 100%;
+	list-style: none;
+	background-color: grey;
+	padding: 0;
+	text-align: center;  
+	margin: 0;
+    z-index: 1;
+
+    text-align: center;
+vertical-align: middle;
+line-height: 90px; 
+}
+
+.dropdown-content li{
+	font-size: 12px;
+	border: 1px solid black;
+	height: 40px;
+	width: 100%;
+	display: block;
+	text-align: center;
+vertical-align: middle;
+line-height: 40px; 
+}
+
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+img{
+	height: 130%;
 }

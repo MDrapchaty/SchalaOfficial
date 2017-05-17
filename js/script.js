@@ -9,11 +9,23 @@ function hideSpotify(target, div){
 	document.getElementById(div).style.display = 'block';
 }
 
+// Video 
+var myVideo = document.getElementById("myVideo"); 
+
+function playPause(){ 
+if (myVideo.paused) 
+  myVideo.play(); 
+else 
+  myVideo.pause(); 
+} 
+
+
+
 // setup for carousel
 var inc=1;
 
-$(document).ready(function() {
 
+$(document).ready(function() {
 
 //Carousel
 $('#next').click(
@@ -60,8 +72,8 @@ $('#next').click(
 				document.getElementById('nightSky').style.display = 'none';
 		}
 
-		$('#nightSky').on('mouseover',showNightSky);
-		$('#nightSky').on('mouseout',hideNightSky);
+		//$('#nightSky').on('mouseover',showNightSky);
+		//$('#nightSky').on('mouseout',hideNightSky);
 		$('#nightSky').on('click',playNightSky); 
 
 //Chalice 
@@ -123,6 +135,83 @@ $('#next').click(
 		$('#algorithm').on('mouseover',showAlgorithm);
 		$('#algorithm').on('mouseout',hideAlgorithm);
 		$('#algorithm').on('click',playAlgorithm);		
+
+
+//Recourse
+		
+		function showRecourse(){
+	      document.getElementById('recourseLi').style.display = 'block';
+        }
+
+        function hideRecourse(){
+	      document.getElementById('recourseLi').style.display = 'none';
+        }
+
+        function playRecourse(){
+				document.getElementById('playRecourse').style.display = 'block';
+				document.getElementById('recourse').style.display = 'none';
+		}
+
+		$('#recourse').on('mouseover',showRecourse);
+		$('#recourse').on('mouseout',hideRecourse);
+		$('#recourse').on('click',playRecourse);		
+
+//Labyrinth
+		
+		function showLabyrinth(){
+	      document.getElementById('labyrinthLi').style.display = 'block';
+        }
+
+        function hideLabyrinth(){
+	      document.getElementById('labyrinthLi').style.display = 'none';
+        }
+
+        function playLabyrinth(){
+				document.getElementById('playLabyrinth').style.display = 'block';
+				document.getElementById('labyrinth').style.display = 'none';
+		}
+
+		$('#labyrinth').on('mouseover',showLabyrinth);
+		$('#labyrinth').on('mouseout',hideLabyrinth);
+		$('#labyrinth').on('click',playLabyrinth);		
+
+//Labyrinth
+		
+		function showTwoWorlds(){
+	      document.getElementById('twoWorldsLi').style.display = 'block';
+        }
+
+        function hideTwoWorlds(){
+	      document.getElementById('twoWorldsLi').style.display = 'none';
+        }
+
+        function playTwoWorlds(){
+				document.getElementById('playTwoWorlds').style.display = 'block';
+				document.getElementById('twoWorlds').style.display = 'none';
+		}
+
+		$('#twoWorlds').on('mouseover',showTwoWorlds);
+		$('#twoWorlds').on('mouseout',hideTwoWorlds);
+		$('#twoWorlds').on('click',playTwoWorlds);		
+
+//Resort
+		
+		function showResort(){
+	      document.getElementById('resortLi').style.display = 'block';
+        }
+
+        function hideResort(){
+	      document.getElementById('resortLi').style.display = 'none';
+        }
+
+        function playResort(){
+				document.getElementById('playResort').style.display = 'block';
+				document.getElementById('resort').style.display = 'none';
+		}
+
+		$('#resort').on('mouseover',showResort);
+		$('#resort').on('mouseout',hideResort);
+		$('#resort').on('click',playResort);		
 
 
 
