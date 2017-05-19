@@ -1,3 +1,15 @@
+// function to show/hide track music page
+
+$('#myVideo').parent().click(function () {
+    if($(this).children("#myVideo").get(0).paused){
+        $(this).children("#myVideo").get(0).play();
+        $(this).children(".playpause").fadeOut();
+    }else{
+       $(this).children("#myVideo").get(0).pause();
+        $(this).children(".playpause").fadeIn();
+    }
+});
+
 function show(target, div){
 	document.getElementById(target).style.display = 'block';
 	document.getElementById(div).style.display = 'none';
@@ -12,6 +24,7 @@ function hideSpotify(target, div){
 // Video 
 var myVideo = document.getElementById("myVideo"); 
 
+// play/pause video on click home page
 function playPause(){ 
 if (myVideo.paused) 
   myVideo.play(); 
@@ -21,13 +34,46 @@ else
 
 
 
+//Facebook API
+window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '1479178645434581',
+	      xfbml      : true,
+	      version    : 'v2.8'
+	    });
+	    FB.AppEvents.logPageView();
+	  };
+
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+
 // setup for carousel
 var inc=1;
 
-
+//Slick image slider about page
 $(document).ready(function() {
+//home page video icon
 
-//Carousel
+
+
+
+
+//About me image slider
+$('.fade').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 500,
+	  fade: true,
+	  cssEase: 'linear'
+    });
+
+
+//Music Page Carousel
 $('#next').click(
 				function () {
 					var currentFig = "#fig" + inc;
@@ -91,8 +137,7 @@ $('#next').click(
 				document.getElementById('chalice').style.display = 'none';
 		}
 
-		$('#chalice').on('mouseover',showChalice);
-		$('#chalice').on('mouseout',hideChalice);
+		
 		$('#chalice').on('click',playChalice); 		
 
 
@@ -111,8 +156,7 @@ $('#next').click(
 				document.getElementById('alpha').style.display = 'none';
 		}
 
-		$('#alpha').on('mouseover',showAlpha);
-		$('#alpha').on('mouseout',hideAlpha);
+	
 		$('#alpha').on('click',playAlpha);		
 
 
@@ -132,8 +176,7 @@ $('#next').click(
 				document.getElementById('algorithm').style.display = 'none';
 		}
 
-		$('#algorithm').on('mouseover',showAlgorithm);
-		$('#algorithm').on('mouseout',hideAlgorithm);
+		
 		$('#algorithm').on('click',playAlgorithm);		
 
 
@@ -152,8 +195,7 @@ $('#next').click(
 				document.getElementById('recourse').style.display = 'none';
 		}
 
-		$('#recourse').on('mouseover',showRecourse);
-		$('#recourse').on('mouseout',hideRecourse);
+		
 		$('#recourse').on('click',playRecourse);		
 
 //Labyrinth
@@ -171,8 +213,7 @@ $('#next').click(
 				document.getElementById('labyrinth').style.display = 'none';
 		}
 
-		$('#labyrinth').on('mouseover',showLabyrinth);
-		$('#labyrinth').on('mouseout',hideLabyrinth);
+		
 		$('#labyrinth').on('click',playLabyrinth);		
 
 //Labyrinth
@@ -190,8 +231,7 @@ $('#next').click(
 				document.getElementById('twoWorlds').style.display = 'none';
 		}
 
-		$('#twoWorlds').on('mouseover',showTwoWorlds);
-		$('#twoWorlds').on('mouseout',hideTwoWorlds);
+
 		$('#twoWorlds').on('click',playTwoWorlds);		
 
 //Resort
@@ -209,8 +249,6 @@ $('#next').click(
 				document.getElementById('resort').style.display = 'none';
 		}
 
-		$('#resort').on('mouseover',showResort);
-		$('#resort').on('mouseout',hideResort);
 		$('#resort').on('click',playResort);		
 
 

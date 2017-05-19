@@ -1,20 +1,52 @@
+.playpause {
+    background-image:url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+    background-repeat:no-repeat;
+    width:5%;
+    height:5%;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+}
+
+.js, html{
+	height: 100%;
+}
+
+#heightfix {
+  height: 2000px;
+}
 
 body, #wrapper{
 	color: white;
-	overflow: hidden;
+	overflow: ;
 	clear: both;
 	width: 100%;
-	height: 100vh;
-
+	height: 100%;
+	background-color: rgba(0, 0, 0, .8);
+	font-family: "Age", "Arial";
 }
+
+
+
+header{
+	width: 100%;
+	height: 83px;
+}
+
 
 nav{
 	width: 100%;
-	height: 7.5em;
-	position: fixed;
+	height: 83px;
+	position: relative;
 	top: 0;
     background-color: rgba(0, 0, 0, .8);
     z-index: 1;
+    
 }
 
 nav h1{
@@ -26,40 +58,60 @@ nav h1{
 }
 
 nav ul{
-	float: right;
+	width: 100%;
+	position: absolute;
+	min-width: 400px;
+
 }
 
 nav ul li{
+	font-size: 18px;
 	display: inline;
-	margin-right: 2em; 
+	margin-right: 2%;
+	text-transform: uppercase; 
 }
 
+
+nav ul li:not(.logo){
+	float: right;
+}
+
+.first{
+	float: left;
+}
+
+nav ul li a {
+	color: white;
+}
 img{
 	width: 100%;
 }
 
 footer{
 	width: 100%;
-	height: 4em;
+	height: 8%;
 	position: fixed;
 	bottom: 0; 
 	background-color: rgba(0, 0, 0, .8);
 	z-index: 1;
 }
 
-form{
-	float: left;
+
+footer ul li{
+	display: inline;
+	margin-right: 5%; 
 }
 
 footer ul{
 	float: right;
+	width: 60%;
 }
 
-header{
-	width: 100%;
-	height: 7.5em;
 
+form{
+	float: left;
 }
+
 
 .nopadding{
     margin-left: 0px;
@@ -77,8 +129,10 @@ header{
 
 #myVideo{
 	position: fixed;
-	top: -20px;
+	top: 0;
 	width: 100%;
+	height: 100%;
+
 }
 
 #main{
@@ -96,13 +150,18 @@ header{
 }
 
 #carousel{
-	width: 25%;
+	width: 35%;
 	height: 500px;
 	position: fixed;
-	left: 40%;
-	top: 25%;	
+	left: 37%;
+	top: 23%;
+
 }
 
+iframe{
+	width: 270px;
+	height: 320px;
+}
 
 .dropdown {
     position: relative;
@@ -112,29 +171,30 @@ header{
 .dropdown-content {
     display: none;
     font-size: 0;
-	color: pink;
+	color: blue;
 	width: 100%;
 	list-style: none;
-	background-color: grey;
+	background-color: black;
 	padding: 0;
 	text-align: center;  
-	margin: 0;
+	
     z-index: 1;
-
     text-align: center;
-vertical-align: middle;
-line-height: 90px; 
+    vertical-align: middle;
+    /*line-height: 90px;*/ 
 }
 
 .dropdown-content li{
 	font-size: 12px;
+	border-radius: 10px;
 	border: 1px solid black;
-	height: 40px;
+	height: 3.5em;
 	width: 100%;
 	display: block;
 	text-align: center;
-vertical-align: middle;
-line-height: 40px; 
+    vertical-align: middle;
+    line-height: 3.5em; 
+    background-color: white;
 }
 
 
@@ -142,6 +202,201 @@ line-height: 40px;
     display: block;
 }
 
-img{
-	height: 130%;
+figure img{
+	height: 140%;
+}
+
+#previous, #next{
+	position: relative;
+	left: 46%;
+	color: black;
+}
+
+.bg{
+	background-image: url("../img/bg.jpg");
+	background-size: 160% 160%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.dropdown-content li a{
+	border: 1px solid black;
+	border-radius: 10px; 
+	padding: .5em;
+	height: 3em;
+	float: right;
+	margin-right: 1em;
+	margin-top: .15em;
+	clear: both;
+	text-align: center;
+    vertical-align: middle;
+    line-height: 2em;
+}
+
+
+.spotbtn{
+	width: 50%;
+	height: 3em;
+	position: relative;
+	bottom: 2em;
+	font-size: 24px;
+	color: black;
+	background-color: #ADFBFF;
+	border: 1px solid #ADFBFF;
+	border-radius: 15px;
+	text-align: center;
+    vertical-align: middle;
+    line-height: 2em;
+}
+
+
+
+/* About page */
+
+.fade{
+	max-width: 100%;
+	position: absolute;
+	top: 0;
+	height: 850px;
+	margin: 0 auto;
+}
+
+.fade:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.aboutimg{
+	height: 850px;
+}
+
+.slick-prev {
+    left: 3%;
+    z-index: 1;
+    top: 250px;
+}
+
+.slick-next {
+    right: 25px;
+    top: 250px;
+}
+
+.slick-prev:before {
+  content: "<";
+  color: red;
+  font-size: 50px;
+}
+
+.slick-next:before {
+  content: ">";
+  color: red;
+  font-size: 50px;
+}
+
+.slick-dots{
+	
+	background-color: lightBLue;
+}
+
+
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+section{
+	position: relative;
+	top: 800px;
+}
+
+
+/* Mail List */
+form{
+	width: 30%;
+	margin-left: 4%;
+	margin-top: 1%;
+}
+
+.email{
+	width: 50%;
+}
+
+.mailbtn{
+	width: 25%;
+	height: 2em;
+	font-size: 1em;
+	background-color: #ADFBFF;
+	border: 1px solid #ADFBFF;
+	border-radius: 15px;
+	text-align: center;
+    vertical-align: middle;
+    line-height: 2em;
+    color: black;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 20%;
+    margin-left: 5%;
+}
+
+/* Media Queries */
+
+@media (max-height: 700px) {
+  
+  figure img{
+	height: 120%;
+	width: 90%;
+  }
+}
+@media (max-height: 600px) {
+  
+  figure img{
+	height: 80%;
+	width: 70%;
+  }
+
+  .dropdown-content {
+    width: 80%; 
+    position: relative;
+    left: 10%;
+}	
+
+iframe{
+	width:200px;
+	height: 290px;
+}
+
+
+@media (max-width: 800px){
+	#carousel{
+	  width: 75%;
+	  left: 35%;	
+    }	
+}
+
+@media (max-width: 500px){
+	#carousel{
+	  width: 75%;
+	  left: 20%;	
+    }	
 }

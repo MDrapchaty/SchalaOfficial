@@ -1,4 +1,5 @@
 <?php
+/*
 // connect to DB
 if( ! ini_get('date.timezone') )
 {
@@ -25,70 +26,55 @@ if (isset($_POST['submit'])) {   //check to see if submit has been posted, if so
 }
 
 
-
-
+*/
 ?>
 
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="heightfix">
 <head>
 	<meta charset="UTF-8">
 	<title>Schala Offical Trance Music</title>
 	<meta name="description" content="Offical Page For Trance Music Artist SCHALA">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../css/styles.css">
 	<script
      src="https://code.jquery.com/jquery-3.2.1.min.js"
      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-     crossorigin="anonymous"></script>	
+     crossorigin="anonymous"></script>
+
+	
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	
+    <link rel="stylesheet" href="../css/styles.css">
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="../js/script.js"></script>	
 </head>
 <body>
 	<script>
-	  window.fbAsyncInit = function() {
-	    FB.init({
-	      appId      : '1479178645434581',
-	      xfbml      : true,
-	      version    : 'v2.8'
-	    });
-	    FB.AppEvents.logPageView();
-	  };
-
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "//connect.facebook.net/en_US/sdk.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
+	 
 	</script>
 	
 
-	<div id="wrapper" class="container-fluid">
+	<div id="wrapper" class="container">
 		<header>
-			<h1>SCHALA</h1>
 			<nav>
+				<h1>SCHALA</h1>
 				<ul>
-					<li> <a href="../index.php">logo</a> </li>
-					<li> <a href="../index.php">home</a> </li>
-					<li> <a href="music.php">music</a> </li>
+				    <li class="logo"> <a href="../index.php">logo</a> </li>
+					<li> <a href="https://trance.news/" target="_blank" >news</a> </li>
 					<li> <a href="about.php">about</a> </li>
-					<li> <a href="https://trance.news/" target="_blank">news</a> </li>
+					<li> <a href="music.php">music</a> </li>
+					<li> <a href="../index.php">home</a> </li>	
 				</ul>
 			</nav>
 		</header>
 		<div class="fade">
-			<div> <img src="../img/Schala1.jpg" alt="schala"> </div>
-			<div> <img src="../img/Schala2.jpg" alt="schala"> </div>
-			<div> <img src="../img/Schala3.jpg" alt="schala"> </div>
-			<div> <img src="../img/Schala4.jpg" alt="schala"> </div>
+			<div> <img class="aboutimg" src="../img/Schala1.jpg" alt="schala"> </div>
+			<div> <img class="aboutimg" src="../img/Schala2.jpg" alt="schala"> </div>
+			<div> <img class="aboutimg" src="../img/Schala3.jpg" alt="schala"> </div>
+			<div> <img class="aboutimg" src="../img/Schala4.jpg" alt="schala"> </div>
 		</div><!-- fade -->
 		
+		<section>
 
 		<div id="social">
 			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
@@ -108,10 +94,11 @@ if (isset($_POST['submit'])) {   //check to see if submit has been posted, if so
 	    	<img src="../img/Dansant-Logo.gif" alt="Dansant Schala Trance">
 	    	<img src="../img/enhanced.png" alt="Enhanced Schala Trance">
 	    </div>
+	    </section>
 		<footer>
 			<form action="about.php" method="post">
-			  <input type="text" name="email" value="" placeholder="Join Mailing List" required><br>
-			  <input type="submit" name="submit" value="Submit">
+			  <input class="email" type="text" name="email" value="" placeholder="Join Mailing List" required>
+			  <input class="mailbtn" type="submit" name="submit" value="join">
 			</form>
 			<ul id="social_links">
 				<li> <a href="https://www.facebook.com/schalamusic/" target="_blank">facebook</a> </li>
@@ -122,22 +109,6 @@ if (isset($_POST['submit'])) {   //check to see if submit has been posted, if so
 		</footer>
 
 	</div><!-- wrapper -->
-<script src="../js/script.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('.fade').slick({
-	  dots: true,
-	  infinite: true,
-	  speed: 500,
-	  fade: true,
-	  cssEase: 'linear'
-    });
-  });
- </script>
 
 </body>
 </html>

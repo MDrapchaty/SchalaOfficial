@@ -45,11 +45,11 @@ if (isset($_POST['submit'])) {   //check to see if submit has been posted, if so
 				<nav>
 					<h1>SCHALA</h1>
 					<ul>
-						<li> <a href="index.php">logo</a> </li>
-						<li> <a href="index.php">home</a> </li>
-						<li> <a href="pages/music.php">music</a> </li>
+						<li class="logo"> <a href="index.php">logo</a> </li>
+						<li> <a href="https://trance.news/" target="_blank" >news</a> </li>
 						<li> <a href="pages/about.php">about</a> </li>
-						<li> <a href="https://trance.news/" target="_blank">news</a> </li>
+						<li> <a href="pages/music.php">music</a> </li>
+						<li> <a href="index.php">home</a> </li>	
 					</ul>
 				</nav>
 			</header>
@@ -61,12 +61,12 @@ if (isset($_POST['submit'])) {   //check to see if submit has been posted, if so
 				  <source src="vid/promo.webm" type="video/webm">
 				  Your browser does not support the video tag.
 			</video>
-
+			<div class="playpause"></div>
 		</div> <!-- main -->
 		<footer>
 			<form action="index.php" method="post">
-			  <input type="text" name="email" value="" placeholder="Join Mailing List" required><br>
-			  <input type="submit" name="submit" value="Submit">
+			  <input class="email" type="text" name="email" value="" placeholder="Join Mailing List" required>
+			  <input class="mailbtn" type="submit" name="submit" value="join">
 			</form>
 			<ul id="social_links">
 				<li> <a href="https://www.facebook.com/schalamusic/" target="_blank">facebook</a> </li>
